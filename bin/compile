@@ -19,10 +19,10 @@ mkdir -p $CACHE_DIR $BIN_PATH $LIB_PATH $TMP_PATH
 if [[ -f "$ENV_DIR/WKHTMLTOPDF_VERSION" ]]; then
   WKHTMLTOPDF_VERSION=$(cat "$ENV_DIR/WKHTMLTOPDF_VERSION")
 else
-  WKHTMLTOPDF_VERSION="0.12/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb"
+  WKHTMLTOPDF_VERSION="0.12.6-1"
 fi
 
-WKHTMLTOPDF_URL="https://downloads.wkhtmltopdf.org/$WKHTMLTOPDF_VERSION"
+WKHTMLTOPDF_URL="https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb"
 WKHTMLTOPDF_DEB="$CACHE_DIR/wkhtmltox.deb"
 WKHTMLTOPDF_PATH="$TMP_PATH/usr/local"
 WKHTMLTOPDF_BINARIES="$WKHTMLTOPDF_PATH/bin"
